@@ -54,7 +54,7 @@ def main():
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
 
-    dataset = datasets.ImageFolder('path_to_animals_10_dataset', transform=transform)
+dataset = datasets.ImageFolder(r'C:\Users\HP\Downloads\Task2_NER_ImageClassification-main\Animal_Classification\data\Animals-10', transform=transform)
 
     train_size = int(0.8 * len(dataset))
     val_size = len(dataset) - train_size
