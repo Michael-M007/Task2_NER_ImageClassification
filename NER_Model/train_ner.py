@@ -5,9 +5,7 @@ from datasets import load_metric
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-# Load the dataset (replace with your Animals-10 NER dataset if needed)
-# If you are using your own dataset, format it properly.
-dataset = load_dataset('conll2003')  # Replace with your NER dataset or preprocessed dataset
+dataset = load_dataset('Animals-10') 
 
 # Initialize the tokenizer and model
 tokenizer = BertTokenizerFast.from_pretrained("bert-base-cased")
